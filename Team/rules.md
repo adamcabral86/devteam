@@ -10,6 +10,7 @@ This section defines the project's file structure and the order in which files s
 
 **Directory Structure:**
 
+
     devteam/         # Directory for team-level files
 ├── Context/        # Directory for project context files
 │   ├── active_context.md  # Active context (Milke: Current task, next steps, decisions)
@@ -23,7 +24,7 @@ This section defines the project's file structure and the order in which files s
     │   prd.md      # Main Product Requirements Document (Emma: Overall project requirements)
     │   class_diagram.md # Class diagram (Bob: System structure)
     │   sequence_diagram.md # Sequence diagrams (Bob: Workflow interactions)
-app/             # Directory for application code and assets
+${appName}/             # Directory for application code and assets, Note ${appName} is a placeholder for whatever the app will eb called.
     └── ...         # (Files and directories related to the application itself)
 
 **Processing Order:**
