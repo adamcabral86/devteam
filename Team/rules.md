@@ -10,7 +10,7 @@ This section combines the file location descriptions and the processing order in
 
 **File Locations:**
 
-    devteam/
+devteam/
 ├── agentrules.md               # Initial agent instructions (Deprecated - See rules.md)
 ├── Context/
 │   ├── active_context.md          # Active context file (Milke: Current task, next steps)
