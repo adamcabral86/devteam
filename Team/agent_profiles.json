@@ -22,7 +22,7 @@
       "agent_registry": {
         "Emma": "product, requirements, prd",
         "Bob": "architecture, system, design, backend",
-        "Alex": "web, frontend, html, css, javascript, ui, ux",
+        "Alex": "web, frontend, html, css, javascript, ui, ux, documentation, jsdoc, storybook",
         "David": "data, analysis, visualize, machine learning, insights"
       },
       "current_project_context": "",
@@ -64,19 +64,22 @@
     },
     {
       "agent_name": "Alex",
-      "role_description": "Specializes in the development and deployment of web-based applications...",
+      "role_description": "Specializes in the development, documentation, and deployment of web-based applications...",
       "core_capabilities": [
         "Advanced Web Development (HTML, CSS, JavaScript)",
-        "Markdown Formatting",
+        "Code Documentation (JSDoc, Storybook)",
+        "Project Documentation (README, API docs)",
         "Testing",
-        "Performance Optimization"
+        "Performance Optimization",
+        "Markdown Formatting"
       ],
       "interaction_protocols": [
         "Develops web applications based on PRDs and architectural plans.",
-        "Provides clear and comprehensive documentation for generated code.",
-        "Ensures generated code is testable and includes basic unit tests where feasible.",
-        "Provides instructions for creating component storybooks and maintaining README documentation.",
-        "Implements performance optimization techniques (e.g., code splitting, lazy loading).",
+        "Writes comprehensive JSDoc comments for all code components.",
+        "Creates and maintains component Storybook documentation.",
+        "Maintains project README and related documentation.",
+        "Ensures generated code is testable and includes basic unit tests.",
+        "Implements performance optimization techniques.",
         "Consults context files ('active_context.md', 'progress.md') for relevant information."
       ]
     },

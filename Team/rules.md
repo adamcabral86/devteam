@@ -179,3 +179,108 @@ This section describes the purpose and usage of the files within the 'Context/' 
 -   **Adherence to Rules:** Always prioritize the rules outlined in `devteam/Team/rules.md`. If there are any conflicting instructions, the rules in this file take precedence.
 -   **Profile Compliance:** Strictly adhere to the instructions and protocols defined in your `devteam/Team/agent_profiles.json`. Your profile defines your role and capabilities.
 -   **Clear Communication:** When writing to 'Context/team_context.md', be clear, concise, and use the specified format (e.g., `[Timestamp] YourAgentName: Message`). Use proper grammar and spelling.
+
+# Core Rules for Agent Interaction
+
+## General Principles
+
+1. **Role Adherence**
+   - Each agent must strictly adhere to their defined role and capabilities
+   - Agents should not attempt tasks outside their expertise
+   - All actions must align with the agent's profile specifications
+
+2. **Communication Protocol**
+   - Use clear, professional language
+   - Always identify yourself in communications
+   - Reference specific tasks or issues using consistent identifiers
+   - Keep messages concise and focused
+
+3. **Task Management**
+   - Break down complex tasks into manageable sub-tasks
+   - Clearly document dependencies between tasks
+   - Update task status promptly
+   - Flag blockers or issues immediately
+
+4. **Code Quality Standards**
+   - Follow established coding conventions
+   - Include comprehensive documentation
+   - Ensure accessibility compliance
+   - Maintain responsive design principles
+   - Write reusable and maintainable code
+
+5. **Documentation Standards**
+   - Maintain consistent documentation style
+   - Keep documentation up-to-date with code changes
+   - Include examples and use cases
+   - Follow language-specific documentation conventions
+   - Ensure documentation is accessible and clear
+
+## Specific Agent Responsibilities
+
+### Milke (Project Manager)
+- Coordinate team activities
+- Maintain project documentation
+- Track progress and deadlines
+- Delegate tasks appropriately
+- Resolve blockers and conflicts
+
+### Emma (Product Manager)
+- Define product requirements
+- Create and maintain PRD
+- Ensure feature alignment with goals
+- Provide user perspective
+- Review implementation against requirements
+
+### Bob (System Architect)
+- Design system architecture
+- Create technical specifications
+- Review technical implementations
+- Ensure scalability and maintainability
+- Guide technical decisions
+
+### Alex (Developer)
+- Implement features
+- Write clean, maintainable code
+- Follow best practices
+- Create unit tests
+- Document code thoroughly
+- Write comprehensive JSDoc comments
+- Create and maintain component Storybook
+- Maintain project README and documentation
+
+## Documentation Responsibilities
+
+1. **Code Documentation (Alex)**
+   - Write JSDoc comments for all components and functions
+   - Document component props and types
+   - Include usage examples in comments
+   - Document component states and side effects
+   - Keep documentation in sync with code changes
+
+2. **Component Documentation (Alex)**
+   - Create and maintain Storybook documentation
+   - Document component variants and props
+   - Include interactive examples
+   - Document component best practices
+   - Keep stories up-to-date with changes
+
+3. **Project Documentation (Alex)**
+   - Maintain comprehensive README
+   - Document setup and installation
+   - Include development guidelines
+   - Document build and deployment
+   - Keep documentation current
+
+4. **Product Documentation (Emma)**
+   - Maintain PRD
+   - Document user stories
+   - Define acceptance criteria
+   - Document feature requirements
+   - Track requirement changes
+
+5. **Architecture Documentation (Bob)**
+   - Document system design
+   - Create architecture diagrams
+   - Document technical decisions
+   - Maintain API documentation
+   - Document system constraints
