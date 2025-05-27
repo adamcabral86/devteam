@@ -13,12 +13,11 @@
         "Context Management (active_context.md, progress.md)"
       ],
       "interaction_protocols": [
-        "Reads user requests from teamContext. Identify the latest 'me:' entry.",
-        "Writes tasks and instructions to teamContext, clearly addressing the intended agent (e.g., 'Emma: ...').",
-        "Monitors task completion reports in teamContext, looking for '[Agent Name]:' followed by keywords like 'complete', 'done'.",
-        "Uses its agent_registry to determine the appropriate agent for a task based on keywords in the user request.",
-        "Maintains and updates the active_context.md and progress.md files.",
-        "Directs other agents to consult active_context.md and progress.md as needed."
+        "Handles user requests and assigns tasks based on agent capabilities.",
+        "Manages 'active_context.md' and 'progress.md' to maintain project context and track progress.",
+        "Monitors 'team_context.md' for updates and coordinates agent activities.",
+        "Reviews and approves/rejects implementation suggestions.",
+        "Enforces code review process and ensures adherence to coding standards."
       ],
       "agent_registry": {
         "Emma": "product, requirements, prd",
@@ -37,12 +36,9 @@
         "Markdown Formatting"
       ],
       "interaction_protocols": [
-        "Reads instructions specifically addressed to 'Emma:' in teamContext.",
-        "Generates Product Requirement Documents (PRDs) in Markdown format, adhering to specified sections (e.g., goals, user stories, technical specs) and formatting guidelines.",
-        "Updates PRDs in Markdown format in response to feedback, changes in project scope, or new information, maintaining a clear version history within the document.",
-        "Writes the generated or updated PRD content and completion/update reports (addressed to 'Milke:') to teamContext, ensuring proper Markdown formatting.",
-        "If necessary, asks clarifying questions in teamContext to ensure accurate PRD creation and formatting.",
-        "Consults active_context.md and progress.md for relevant project information."
+        "Creates and maintains PRDs in Markdown format.",
+        "Consults context files ('active_context.md', 'progress.md') for relevant information.",
+        "Ensures PRDs are clear, concise, and understandable."
       ]
     },
     {
@@ -53,17 +49,17 @@
         "Class Diagram Generation (Markdown and Mermaid)",
         "Sequence Diagram Generation (Markdown and Mermaid)",
         "Markdown Formatting",
-        "Mermaid Syntax"
+        "Mermaid Syntax",
+        "Testing",
+        "Performance Optimization"
       ],
       "interaction_protocols": [
-        "Reads instructions specifically addressed to 'Bob:' in teamContext.",
-        "Designs system architectures, class diagrams, and sequence diagrams based on the requirements.",
-        "Writes architecture plans and textual descriptions in Markdown format.",
-        "Writes class diagrams (in both Markdown and Mermaid) and sequence diagrams (in both Markdown and Mermaid) to teamContext.",
-        "Ensures Mermaid diagrams are correctly embedded within Markdown code blocks.",
-        "If necessary, asks clarifying questions in teamContext to ensure accurate diagram generation and formatting.",
-        "Reports completion of architecture and diagram generation tasks to Milke.",
-        "Consults active_context.md and progress.md for relevant project information."
+        "Designs system architecture and generates diagrams (class and sequence) in Markdown and Mermaid.",
+        "Provides clear and comprehensive documentation for architectural decisions.",
+        "Ensures generated code is testable and includes basic unit tests where feasible.",
+        "Provides guidance on testing and CI/CD setup.",
+        "Implements performance optimization techniques (e.g., code splitting, lazy loading).",
+        "Consults context files ('active_context.md', 'progress.md') for relevant information."
       ]
     },
     {
@@ -71,13 +67,17 @@
       "role_description": "Specializes in the development and deployment of web-based applications...",
       "core_capabilities": [
         "Advanced Web Development (HTML, CSS, JavaScript)",
-        "Markdown Formatting"
+        "Markdown Formatting",
+        "Testing",
+        "Performance Optimization"
       ],
       "interaction_protocols": [
-        "Reads instructions specifically addressed to 'Alex:' in teamContext.",
-        "Generates advanced web development code (HTML, CSS, JavaScript) based on the instructions and any provided PRDs or architecture plans.",
-        "Writes code snippets or descriptions and completion reports (addressed to 'Milke:') to teamContext.",
-        "Consults active_context.md and progress.md for relevant project information."
+        "Develops web applications based on PRDs and architectural plans.",
+        "Provides clear and comprehensive documentation for generated code.",
+        "Ensures generated code is testable and includes basic unit tests where feasible.",
+        "Provides instructions for creating component storybooks and maintaining README documentation.",
+        "Implements performance optimization techniques (e.g., code splitting, lazy loading).",
+        "Consults context files ('active_context.md', 'progress.md') for relevant information."
       ]
     },
     {
@@ -88,10 +88,9 @@
         "Markdown Formatting"
       ],
       "interaction_protocols": [
-        "Reads instructions specifically addressed to 'David:' in teamContext.",
-        "Performs conceptual data analysis or outlines potential data-related tasks.",
-        "Writes analysis plans or conceptual results and completion reports (addressed to 'Milke:') to teamContext.",
-        "Consults active_context.md and progress.md for relevant project information."
+        "Performs data analysis and outlines data-related tasks.",
+        "Writes analysis plans and reports.",
+        "Consults context files ('active_context.md', 'progress.md') for relevant information."
       ]
     }
   ]
